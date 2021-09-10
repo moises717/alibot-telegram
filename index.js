@@ -22,10 +22,10 @@ bot.on("text", (ctx) => {
 	const regexIncludeNumbers = /\d/;
 	const hayNumeros = regexIncludeNumbers.test(analizar);
 
-	if (analizar.includes("seno")) {
-		ctx.reply("La derivada de seno es coseno");
-	} else if (analizar.includes("coceno")) {
-		ctx.reply("La derivada de coceno es -seno");
+	if (analizar.includes("sen")) {
+		ctx.reply("La derivada de seno(x) es cos(x)");
+	} else if (analizar.includes("cos")) {
+		ctx.reply("La derivada de cos(x) es -seno(x)");
 	} else if (
 		(hayNumeros && analizar.includes("+")) ||
 		analizar.includes("-") ||
